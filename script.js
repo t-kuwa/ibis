@@ -82,4 +82,31 @@ document.addEventListener('DOMContentLoaded', () => {
             slides[currentSlide].classList.add('active');
         }, 6000); // Switch every 6 seconds
     }
+    // Loading Screen
+    const loadingScreen = document.getElementById('loading-screen');
+
+    if (loadingScreen) {
+        const hideLoadingScreen = () => {
+            loadingScreen.classList.add('hidden');
+            loadingScreen.addEventListener('transitionend', (event) => {
+                if (event.propertyName === 'opacity') {
+                    loadingScreen.remove();
+                }
+            }, { once: true });
+        };
+
+        const triggerHide = () => {
+            window.removeEventListener('load', triggerHide);
+            hideLoadingScreen();
+        };
+
+        // Ensure minimum display time of 1.5 seconds for branding
+        setTimeout(() => {
+            if (document.readyState === 'complete') {
+                hideLoadingScreen();
+            } else {
+                window.addEventListener('load', triggerHide);
+            }
+        }, 1500);
+    }
 });
