@@ -827,6 +827,11 @@ footer {
     transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Ensure visible when nav opens over white background on mobile */
+.hamburger.active span {
+    background: var(--primary-blue) !important;
+}
+
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -941,6 +946,15 @@ footer {
 
     .mobile-nav {
         display: flex;
+    }
+
+    /* Keep hamburger/cross visible over light backgrounds on mobile */
+    #header:not(.scrolled) .hamburger span {
+        background: white;
+    }
+    
+    .hamburger.active span {
+        background: var(--primary-blue) !important;
     }
 
     .hero-content h1 {
