@@ -653,8 +653,15 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 60px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
 }
 
 .footer-logo-wrapper {
@@ -687,15 +694,14 @@ footer {
 
 .footer-menu {
     flex: 1;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 .footer-menu ul {
     display: flex;
     flex-wrap: wrap;
     gap: 18px 26px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .footer-menu a {
@@ -971,6 +977,11 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 40px;
+    }
+
+    .footer-left {
+        width: 100%;
+        align-items: center;
     }
 
     .footer-menu {
