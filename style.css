@@ -67,15 +67,26 @@ img {
 /* Header */
 #header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1); /* Subtle background for visibility */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+}
+
+#header.scrolled {
+    background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .header-container {
@@ -88,20 +99,32 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
 }
 
 .logo img {
     height: 50px;
     width: auto;
+    filter: brightness(0) invert(1); /* White logo by default */
+    transition: filter 0.4s ease;
 }
 
 .logo-text {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: var(--primary-blue);
+    color: white; /* White text by default */
     letter-spacing: 0.1em;
+    transition: color 0.4s ease;
+}
+
+/* Scrolled State Colors */
+#header.scrolled .logo img {
+    filter: none; /* Restore original color */
+}
+
+#header.scrolled .logo-text {
+    color: var(--primary-blue);
 }
 
 .desktop-nav ul {
@@ -113,16 +136,21 @@ img {
 .desktop-nav a {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--text-dark);
+    color: white; /* White links by default */
     position: relative;
     padding: 5px 0;
+}
+
+#header.scrolled .desktop-nav a {
+    color: var(--text-dark);
 }
 
 .desktop-nav a:not(.btn-contact)::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 2px;
     background: var(--accent-cyan);
@@ -130,7 +158,12 @@ img {
 }
 
 .desktop-nav a:not(.btn-contact):hover::after {
-    width: 100%;
+    width: 80%;
+}
+
+.desktop-nav a:not(.btn-contact):hover {
+    color: var(--accent-cyan);
+    text-shadow: 0 0 20px rgba(0, 168, 204, 0.4);
 }
 
 .btn-contact {
@@ -659,9 +692,13 @@ footer {
 .hamburger span {
     width: 100%;
     height: 3px;
-    background: var(--primary-blue);
+    background: white; /* White hamburger by default */
     border-radius: 3px;
     transition: all 0.3s ease;
+}
+
+#header.scrolled .hamburger span {
+    background: var(--primary-blue);
 }
 
 .hamburger.active span:nth-child(1) {
@@ -761,6 +798,23 @@ footer {
         height: 70px;
         padding: 0 20px;
         justify-content: space-between;
+    }
+
+    #header {
+        top: 0;
+        width: 100%;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: transparent;
+        padding: 0;
+    }
+
+    #header.scrolled {
+        background: rgba(255, 255, 255, 0.9);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .desktop-nav {

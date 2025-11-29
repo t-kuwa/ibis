@@ -37,17 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Header Background on Scroll
+    // Header Scroll Effect
     const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
+
+    const handleScroll = () => {
+        const heroHeight = document.getElementById('hero').offsetHeight;
+        if (window.scrollY > heroHeight - 100) { // Switch slightly before leaving hero
+            header.classList.add('scrolled');
         } else {
-            header.style.background = 'rgba(255, 255, 255, 0.8)';
-            header.style.boxShadow = 'none';
+            header.classList.remove('scrolled');
         }
-    });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Init check
 
     // Hamburger Menu
     const hamburger = document.querySelector('.hamburger');
