@@ -684,6 +684,7 @@ footer {
     flex-direction: column;
     gap: 16px;
     flex: 1;
+    align-items: center;
 }
 
 .footer-logo-wrapper {
@@ -711,7 +712,7 @@ footer {
 .footer-logo p {
     font-size: 1.1rem;
     opacity: 0.8;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-menu {
@@ -721,9 +722,10 @@ footer {
 
 .footer-menu ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 18px 26px;
+    flex-direction: column;
+    gap: 12px;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .footer-menu a {
