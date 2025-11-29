@@ -67,4 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
         });
     });
+
+    // Hero Slideshow
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+
+    if (slides.length > 0) {
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 6000); // Switch every 6 seconds
+    }
 });
