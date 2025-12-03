@@ -187,7 +187,7 @@ img {
     color: var(--text-dark);
 }
 
-.desktop-nav a:not(.btn-contact)::after {
+.desktop-nav a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -199,39 +199,16 @@ img {
     transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.desktop-nav a:not(.btn-contact):hover::after {
+.desktop-nav a:hover::after {
     width: 80%;
 }
 
-.desktop-nav a:not(.btn-contact):hover {
+.desktop-nav a:hover {
     color: var(--primary-blue);
     text-shadow: 0 0 12px rgba(0, 51, 102, 0.25);
 }
 
-.btn-contact {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-blue);
-    color: white !important;
-    padding: 10px 25px;
-    border-radius: 50px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    box-shadow: 0 4px 15px rgba(0, 51, 102, 0.2);
-    line-height: 1;
-    transition: all 0.3s ease;
-}
 
-.desktop-nav .btn-contact {
-    padding: 13px 16px;
-}
-
-.btn-contact:hover {
-    background: var(--accent-cyan);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 168, 204, 0.3);
-}
 
 /* Hero Section */
 #hero {
@@ -750,38 +727,7 @@ footer {
     border-radius: 999px;
 }
 
-.footer-contact {
-    text-align: right;
-}
 
-.footer-contact p {
-    margin-bottom: 15px;
-    opacity: 0.7;
-    font-size: 0.9rem;
-}
-
-.btn-mail {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
-    color: white;
-    padding: 15px 35px;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    font-family: 'Outfit', sans-serif;
-    letter-spacing: 0.05em;
-}
-
-.btn-mail:hover {
-    background: white;
-    color: var(--primary-blue);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
 
 .copyright {
     text-align: center;
@@ -868,14 +814,7 @@ footer {
     color: var(--primary-blue);
 }
 
-.btn-contact-mobile {
-    background: var(--primary-blue);
-    color: white !important;
-    padding: 12px 30px;
-    border-radius: 50px;
-    margin-top: 10px;
-    display: inline-block;
-}
+
 
 /* Animations */
 .fade-in {
@@ -1026,13 +965,5 @@ footer {
         text-align: center;
     }
     
-    .footer-contact {
-        text-align: center;
-        width: 100%;
-    }
-    
-    .btn-mail {
-        width: 100%;
-        justify-content: center;
-    }
+
 }
