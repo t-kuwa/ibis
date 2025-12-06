@@ -1,277 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>アイビス株式会社 | Ibis Co., Ltd.</title>
-  <meta name="description" content="宮城県多賀城市のアイビス株式会社。不動産の売買、仲介、所有、および沖縄旅館業事業の企画、開発、運営、所有を行っています。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@300;400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- OGP / SNS Share Settings -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="アイビス株式会社">
-  <meta property="og:description" content="宮城県多賀城市のアイビス株式会社。不動産の売買、仲介、所有、および沖縄旅館業事業の企画、開発、運営、所有を行っています。">
-  <meta property="og:url" content="https://ibis-miyagi.com/">
-  <meta property="og:site_name" content="アイビス株式会社">
-  <meta property="og:image" content="https://ibis-miyagi.com/assets/images/ogp.jpg">
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://ibis-miyagi.com/">
-  <!-- Favicon -->
-  <link rel="icon" href="assets/images/ibis_logo.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/images/ibis_logo.png">
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "アイビス株式会社",
-    "url": "https://ibis-miyagi.com/",
-    "logo": "https://ibis-miyagi.com/assets/images/ibis_logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "宮内1丁目6番1号",
-      "addressLocality": "多賀城市",
-      "addressRegion": "宮城県",
-      "postalCode": "985-0844",
-      "addressCountry": "JP"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+81-22-352-1527",
-      "contactType": "customer service",
-      "areaServed": "JP",
-      "availableLanguage": "Japanese"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "佐藤 祐司"
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アイビス株式会社 | Ibis Co., Ltd.</title>
+    <meta name="description" content="宮城県多賀城市のアイビス株式会社。不動産の売買、仲介、所有、および沖縄旅館業事業の企画、開発、運営、所有を行っています。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- OGP / SNS Share Settings -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="アイビス株式会社">
+    <meta property="og:description" content="宮城県多賀城市のアイビス株式会社。不動産の売買、仲介、所有、および沖縄旅館業事業の企画、開発、運営、所有を行っています。">
+    <meta property="og:url" content="https://ibis-miyagi.com/">
+    <meta property="og:site_name" content="アイビス株式会社">
+    <meta property="og:image" content="https://ibis-miyagi.com/assets/images/ogp.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ibis-miyagi.com/">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/ibis_logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/ibis_logo.png">
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "アイビス株式会社",
+      "url": "https://ibis-miyagi.com/",
+      "logo": "https://ibis-miyagi.com/assets/images/ibis_logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "宮内1丁目6番1号",
+        "addressLocality": "多賀城市",
+        "addressRegion": "宮城県",
+        "postalCode": "985-0844",
+        "addressCountry": "JP"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+81-22-352-1527",
+        "contactType": "customer service",
+        "areaServed": "JP",
+        "availableLanguage": "Japanese"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "佐藤 祐司"
+      }
     }
-  }
-  </script>
-</head>
-
-<body>
-  <!-- Loading Screen -->
-  <div id="loading-screen">
-    <div class="loading-logo">
-      <img src="assets/images/ibis_logo.png" alt="IBIS Logo">
-      <div class="loading-spinner" aria-hidden="true"></div>
-    </div>
-  </div>
-
-  <header id="header">
-    <div class="container header-container">
-      <a href="#" class="logo">
+    </script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-logo">
         <img src="assets/images/ibis_logo.png" alt="IBIS Logo">
-        <span class="logo-text">IBIS</span>
-      </a>
-      <nav class="desktop-nav">
-        <ul>
-          <li><a href="#company">会社概要</a></li>
-          <li><a href="#business">事業内容</a></li>
-          <li><a href="#representative">代表者挨拶</a></li>
-          <li><a href="#properties">所有物件</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="mobile-nav">
-        <ul>
-          <li><a href="#company">会社概要</a></li>
-          <li><a href="#business">事業内容</a></li>
-          <li><a href="#representative">代表者挨拶</a></li>
-          <li><a href="#properties">所有物件</a></li>
-        </ul>
-      </nav>
+        <div class="loading-spinner" aria-hidden="true"></div>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section id="hero">
-      <div class="hero-slideshow">
-        <div class="hero-slide active" style="background-image: url('assets/images/hero_bg_1.jpg');"></div>
-        <div class="hero-slide" style="background-image: url('assets/images/hero_bg_2.jpg');"></div>
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <h1 class="fade-in-up">想いと挑戦で<br>未来を築く</h1>
-        <p class="fade-in-up delay-1">宮城県の不動産から、<br class="sp-only-inline-block">
-          沖縄のリゾート開発まで。<br>アイビス株式会社は、<br class="sp-only-inline-block">地域に根ざした価値を創造します。</p>
-      </div>
-      <div class="scroll-indicator fade-in delay-2">
-        <span>Scroll Down</span>
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="company" class="section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">会社概要</h2>
-          <p class="section-subtitle">Company Overview</p>
-        </div>
-        <div class="company-card fade-in">
-          <table class="company-table">
-            <tr>
-              <th>会社名</th>
-              <td>アイビス株式会社</td>
-            </tr>
-            <tr>
-              <th>代表取締役</th>
-              <td>佐藤 祐司</td>
-            </tr>
-            <tr>
-              <th>所在地</th>
-              <td>〒985-0844<br>宮城県多賀城市宮内1丁目6番1号</td>
-            </tr>
-            <tr>
-              <th>連絡先</th>
-              <td>
-                TEL: 022-352-1527<br>
-                FAX: 022-364-3212<br>
-              </td>
-            </tr>
-            <tr>
-              <th>免許番号</th>
-              <td>宅地建物取引業 <br class="sp-only-inline-block">宮城県知事（1）第7229号</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>
-                不動産の売買、仲介、所有<br>
-                沖縄旅館業物件の企画、管理、運営、所有
-              </td>
-            </tr>
-          </table>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5408.558229785767!2d141.01071863473956!3d38.2803145467928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f898f4c0569940d%3A0x6d679a3490906af1!2z5pel5pys44CB44CSOTg1LTA4NDQg5a6u5Z-O55yM5aSa6LOA5Z-O5biC5a6u5YaF77yR5LiB55uu!5e0!3m2!1sja!2sus!4v1764388270917!5m2!1sja!2sus"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="アイビス株式会社 地図"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="business" class="section bg-light">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">事業内容</h2>
-          <p class="section-subtitle">Our Business</p>
-        </div>
-        <div class="business-grid">
-          <div class="business-card fade-in">
-            <div class="card-image">
-              <img src="assets/images/building_modern.png" alt="不動産事業">
-            </div>
-            <div class="card-content">
-              <h3>不動産事業</h3>
-              <p>宮城県内をメインに、土地・建物の売買および仲介事業を展開しています。お客様のニーズに合わせた最適なご提案を行い、安心・安全な取引をサポートいたします。</p>
-            </div>
-          </div>
-          <div class="business-card fade-in delay-1">
-            <div class="card-image">
-              <img src="assets/images/okinawa_ryokan.png" alt="沖縄旅館業事業">
-            </div>
-            <div class="card-content">
-              <h3>沖縄旅館業事業</h3>
-              <p>沖縄県において、旅館業物件の企画・開発・管理・運営・所有を一貫して手がけています。地域の魅力を最大限に活かしたリゾート空間を創造します。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="representative" class="section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">代表者挨拶</h2>
-          <p class="section-subtitle">Message</p>
-        </div>
-        <div class="rep-container">
-          <div class="rep-text fade-in delay-1">
-            <h3>人と不動産の可能性を<br class="sp-only-inline-block">最大化する。</h3>
-            <p>
-              アイビス株式会社は、<br>「人と不動産の可能性を最大化する」<br>という理念のもと、不動産の売買、仲介、沖縄旅館業の企画、運営を展開しています。<br><br>
-              不動産は単なる資産ではなく、人生を変える力を持つフィールドです。私たちはその価値を見極め、活かし、未来につながる選択肢を提供する企業でありたいと考えています。<br><br>
-              想いと挑戦こそ、未来をつくる力です。<br>
-              私たちは歩みを止めず、想いを込めて、事業に向き合い続けます。
-            </p>
-            <p class="rep-name">
-              <span>アイビス株式会社 代表取締役</span>
-              佐藤 祐司
-            </p>
-            <div class="history">
-              <h4>略歴</h4>
-              <dl class="history-list">
-                <dt>2012年</dt>
-                <dd>東北学院大学経済学部経済学科 卒業<br>杜の都信用金庫 入庫</dd>
-                <dt>2017年</dt>
-                <dd>東北大学 地域イノベーションアドバイザー塾 アドバンスドコース 卒塾</dd>
-                <dt>2018年</dt>
-                <dd>東北大学 地域イノベーションアドバイザー塾 コーチ就任<br>株式会社久保田ホールディングス 入社</dd>
-                <dt>2024年</dt>
-                <dd>アイビス株式会社 設立</dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="properties" class="section bg-light">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">所有物件</h2>
-          <p class="section-subtitle">Owned Properties</p>
-        </div>
-        <div class="properties-grid">
-          <!-- Placeholder items -->
-          <div class="property-item fade-in">
-            <div class="property-img-placeholder"></div>
-            <div class="property-info">
-              <p>物件情報準備中</p>
-            </div>
-          </div>
-          <div class="property-item fade-in delay-1">
-            <div class="property-img-placeholder"></div>
-            <div class="property-info">
-              <p>物件情報準備中</p>
-            </div>
-          </div>
-          <div class="property-item fade-in delay-2">
-            <div class="property-img-placeholder"></div>
-            <div class="property-info">
-              <p>物件情報準備中</p>
-            </div>
-          </div>
-        </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-left">
-        <div class="footer-logo">
-          <div class="footer-logo-wrapper">
-            <img src="assets/images/ibis_logo.png" alt="IBIS Logo">
-            <span class="footer-logo-text">IBIS</span>
-          </div>
-          <p>アイビス株式会社</p>
-        </div>
-        <nav class="footer-menu" aria-label="フッターメニュー">
+    <header id="header">
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <img src="assets/images/ibis_logo.png" alt="IBIS Logo">
+          <span class="logo-text">IBIS</span>
+        </a>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#company">会社概要</a></li>
+            <li><a href="#business">事業内容</a></li>
+            <li><a href="#representative">代表者挨拶</a></li>
+            <li><a href="#properties">所有物件</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="mobile-nav">
           <ul>
             <li><a href="#company">会社概要</a></li>
             <li><a href="#business">事業内容</a></li>
@@ -280,14 +92,197 @@
           </ul>
         </nav>
       </div>
+    </header>
 
-    </div>
-    <div class="copyright">
-      <p>&copy; 2024 Ibis Co., Ltd. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <main>
+      <section id="hero">
+        <div class="hero-slideshow">
+          <div class="hero-slide active" style="background-image: url('assets/images/hero_bg_1.jpg');"></div>
+          <div class="hero-slide" style="background-image: url('assets/images/hero_bg_2.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <h1 class="fade-in-up">想いと挑戦で<br>未来を築く</h1>
+          <p class="fade-in-up delay-1">宮城県の不動産から、<br class="sp-only-inline-block">
+            沖縄のリゾート開発まで。<br>アイビス株式会社は、<br class="sp-only-inline-block">地域に根ざした価値を創造します。</p>
+        </div>
+        <div class="scroll-indicator fade-in delay-2">
+          <span>Scroll Down</span>
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+        </div>
+      </section>
 
-  <script src="script.js"></script>
-</body>
+      <section id="company" class="section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <h2 class="section-title">会社概要</h2>
+            <p class="section-subtitle">Company Overview</p>
+          </div>
+          <div class="company-card fade-in">
+            <table class="company-table">
+              <tr>
+                <th>会社名</th>
+                <td>アイビス株式会社</td>
+              </tr>
+              <tr>
+                <th>代表取締役</th>
+                <td>佐藤 祐司</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>〒985-0844<br>宮城県多賀城市宮内1丁目6番1号</td>
+              </tr>
+              <tr>
+                <th>連絡先</th>
+                <td>
+                  TEL: 022-352-1527<br>
+                  FAX: 022-364-3212<br>
+                </td>
+              </tr>
+              <tr>
+                <th>免許番号</th>
+                <td>宅地建物取引業 <br class="sp-only-inline-block">宮城県知事（1）第7229号</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>
+                  不動産の売買、仲介、所有<br>
+                  沖縄旅館業物件の企画、管理、運営、所有
+                </td>
+              </tr>
+            </table>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5408.558229785767!2d141.01071863473956!3d38.2803145467928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f898f4c0569940d%3A0x6d679a3490906af1!2z5pel5pys44CB44CSOTg1LTA4NDQg5a6u5Z-O55yM5aSa6LOA5Z-O5biC5a6u5YaF77yR5LiB55uu!5e0!3m2!1sja!2sus!4v1764388270917!5m2!1sja!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="アイビス株式会社 地図"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="business" class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in">
+            <h2 class="section-title">事業内容</h2>
+            <p class="section-subtitle">Our Business</p>
+          </div>
+          <div class="business-grid">
+            <div class="business-card fade-in">
+              <div class="card-image">
+                <img src="assets/images/building_modern.png" alt="不動産事業">
+              </div>
+              <div class="card-content">
+                <h3>不動産事業</h3>
+                <p>宮城県内をメインに、土地・建物の売買および仲介事業を展開しています。お客様のニーズに合わせた最適なご提案を行い、安心・安全な取引をサポートいたします。</p>
+              </div>
+            </div>
+            <div class="business-card fade-in delay-1">
+              <div class="card-image">
+                <img src="assets/images/okinawa_ryokan.png" alt="沖縄旅館業事業">
+              </div>
+              <div class="card-content">
+                <h3>沖縄旅館業事業</h3>
+                <p>沖縄県において、旅館業物件の企画・開発・管理・運営・所有を一貫して手がけています。地域の魅力を最大限に活かしたリゾート空間を創造します。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="representative" class="section">
+        <div class="container">
+          <div class="section-header fade-in">
+            <h2 class="section-title">代表者挨拶</h2>
+            <p class="section-subtitle">Message</p>
+          </div>
+          <div class="rep-container">
+            <div class="rep-text fade-in delay-1">
+              <h3>人と不動産の可能性を<br class="sp-only-inline-block">最大化する。</h3>
+              <p>
+                アイビス株式会社は、<br>「人と不動産の可能性を最大化する」<br>という理念のもと、不動産の売買、仲介、沖縄旅館業の企画、運営を展開しています。<br><br>
+                不動産は単なる資産ではなく、人生を変える力を持つフィールドです。私たちはその価値を見極め、活かし、未来につながる選択肢を提供する企業でありたいと考えています。<br><br>
+                想いと挑戦こそ、未来をつくる力です。<br>
+                私たちは歩みを止めず、想いを込めて、事業に向き合い続けます。
+              </p>
+              <p class="rep-name">
+                <span>アイビス株式会社 代表取締役</span>
+                佐藤 祐司
+              </p>
+              <div class="history">
+                <h4>略歴</h4>
+                <dl class="history-list">
+                  <dt>2012年</dt>
+                  <dd>東北学院大学経済学部経済学科 卒業<br>杜の都信用金庫 入庫</dd>
+                  <dt>2017年</dt>
+                  <dd>東北大学 地域イノベーションアドバイザー塾 アドバンスドコース 卒塾</dd>
+                  <dt>2018年</dt>
+                  <dd>東北大学 地域イノベーションアドバイザー塾 コーチ就任<br>株式会社久保田ホールディングス 入社</dd>
+                  <dt>2024年</dt>
+                  <dd>アイビス株式会社 設立</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="properties" class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in">
+            <h2 class="section-title">所有物件</h2>
+            <p class="section-subtitle">Owned Properties</p>
+          </div>
+          <div class="properties-grid">
+            <!-- Placeholder items -->
+            <div class="property-item fade-in">
+              <div class="property-img-placeholder"></div>
+              <div class="property-info">
+                <p>物件情報準備中</p>
+              </div>
+            </div>
+            <div class="property-item fade-in delay-1">
+              <div class="property-img-placeholder"></div>
+              <div class="property-info">
+                <p>物件情報準備中</p>
+              </div>
+            </div>
+            <div class="property-item fade-in delay-2">
+              <div class="property-img-placeholder"></div>
+              <div class="property-info">
+                <p>物件情報準備中</p>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <div class="footer-logo-wrapper">
+              <img src="assets/images/ibis_logo.png" alt="IBIS Logo">
+              <span class="footer-logo-text">IBIS</span>
+            </div>
+            <p>アイビス株式会社</p>
+          </div>
+          <nav class="footer-menu" aria-label="フッターメニュー">
+            <ul>
+              <li><a href="#company">会社概要</a></li>
+              <li><a href="#business">事業内容</a></li>
+              <li><a href="#representative">代表者挨拶</a></li>
+              <li><a href="#properties">所有物件</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Ibis Co., Ltd. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
