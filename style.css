@@ -576,6 +576,21 @@ img {
     color: var(--text-dark);
 }
 
+p.rep-name {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+    text-align: right;
+    font-weight: bold;
+}
+
+.rep-name span {
+    display: block;
+    font-size: 1rem;
+    color: var(--primary-blue);
+    font-weight: normal;
+}
+
 .history {
     background: var(--bg-light);
     padding: 30px;
